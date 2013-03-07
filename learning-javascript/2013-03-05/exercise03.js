@@ -6,7 +6,8 @@ for (var i = 1; i<=10; i++) {
 		else
 			row += 1;
 		if (j<10)
-			row += ", ";
+			row += ",";
+		row += "\t"
 	}
 	console.log(row);
 }
