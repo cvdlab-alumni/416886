@@ -1,15 +1,16 @@
 function identity(n) {
+	var matrix = "";
 	for (var i = 1; i<=n; i++) {
-		var row = "";
 		for(var j = 1; j<=n; j++) {
 			if (i!==j)
-				row += 0;
+				matrix += 0;
 			else
-				row += 1;
+				matrix += 1;
 			if (j<10)
-				row += ",";
-			row += "\t"
+				matrix += ",";
+			matrix += "\t"
 		}
-		console.log(row);
+		matrix += "\n";
 	}
+	return matrix;
 }
