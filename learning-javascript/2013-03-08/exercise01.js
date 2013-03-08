@@ -35,3 +35,5 @@ function exercise01(array, n) {
 	result = divisibleForFour(result);
 	return sumAll(result);
 }
+
+exercise01([], 10);
