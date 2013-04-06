@@ -47,7 +47,7 @@ VIEW = DRAW;
 step2D = SIMPLICIAL_COMPLEX([[0,0], [0,3.7], [5,3.7], [5,1.85]])([[0,1,2,3]]);
 step3D = EXTRUDE([17])(step2D);
 
-step3D = MAP([S1,S3,S2])(step3D);
+step3D = T([2])([17])(R([2,3])(PI/2)(step3D));
 
 ramp = STRUCT(REPLICA(10)([step3D, T([1,3])([5,3.7])]));
 
@@ -59,7 +59,7 @@ ramp1 = T([1,2,3])([38.5, 95.5, 4])(ramp);
 step2D = SIMPLICIAL_COMPLEX([[0,0], [0,3.7], [5,3.7], [5,1.85]])([[0,1,2,3]]);
 step3D = EXTRUDE([17])(step2D);
 
-step3D = MAP([S1,S3,S2])(step3D);
+step3D = T([2])([17])(R([2,3])(PI/2)(step3D));
 
 ramp = STRUCT(REPLICA(10)([step3D, T([1,3])([5,3.7])]));
 
@@ -70,7 +70,7 @@ ramp2 = T([1,2,3])([38.5, 95.5, 41])(ramp);
 step2D = SIMPLICIAL_COMPLEX([[0,0], [0,3.7], [5,3.7], [5,1.85]])([[0,1,2,3]]);
 step3D = EXTRUDE([17])(step2D);
 
-step3D = MAP([S1,S3,S2])(step3D);
+step3D = T([2])([17])(R([2,3])(PI/2)(step3D));
 
 ramp = STRUCT(REPLICA(10)([step3D, T([1,3])([5,3.7])]));
 
