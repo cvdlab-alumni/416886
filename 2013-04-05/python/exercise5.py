@@ -29,6 +29,6 @@ step3D = MAP([S1,S3,S2])(step3D)
 
 ramp = STRUCT(NN(10)([step3D, T([1,3])([5,3.7])]))
 
-ramp2 = T([1,2,3])([38.5, 95.5, 41])(ramp)
+ramp3 = T([1,2,3])([88.5, 95.5, 78])(ramp)
 
-VIEW(STRUCT([building, ramp1, ramp2]))
+VIEW(STRUCT([building, ramp1, ramp2, ramp3]))
