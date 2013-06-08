@@ -303,8 +303,8 @@ var model = STRUCT([T([1,2])([34, -(15.5+60+15.5+5)])(pedestal), T([1])([34])(dr
   return model
   })();
 
-  exports.author = 'PUT_YOUR_GITHUB_USERNAME_HERE';
-  exports.category = 'PUT_YOUR_MODEL_CATEGORY_HERE';
+  exports.author = 'Phoenyx89';
+  exports.category = 'others';
   exports.scmodel = scmodel;
 
   if (!module.parent) {
