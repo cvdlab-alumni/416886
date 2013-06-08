@@ -19,4 +19,15 @@ var mapping_numbers = MAP(mapping)(domain);
 
 var mountains =  COLOR([150/255,75/255,0])(mapping_numbers);
 
-// DRAW(mountains);
+/*******************************************************************/
+
+// es2 
+
+var h_lake = h/8;
+
+var lake = COLOR([0,204/255,204/255])(CUBOID([x,y,h_lake]));
+
+
+model = STRUCT([mountains, lake]);
+
+// DRAW(model);
