@@ -112,7 +112,7 @@ c11 = BEZIER(S1)([p9,p10])
 c12 = BEZIER(S1)([p10,p11])
 
 
-interior = COLOR(RED)(
+interior = COLOR(BROWN)(
                 STRUCT([surface([c1,c2]), surface([c3,c4]), surface([c5,c6]), surface([c7,c8]), 
                         surface([c2,c9]), surface([c4,c10]), surface([c6,c11]), surface([c8,c12])]))
 
@@ -137,14 +137,14 @@ dx_dr4 = dx_dr123/2
 dy_dr4 = dy_drs
 dz_dr4 = dz_drs
 
-case123 = COLOR(RED)(STRUCT([CUBOID([dx_dr123, dy_dr123, 0.1]), 
+case123 = COLOR(BROWN)(STRUCT([CUBOID([dx_dr123, dy_dr123, 0.1]), 
                                         CUBOID([dx_dr123, 0.1, dz_dr123]), 
                                         CUBOID([0.1, dy_dr123, dz_dr123]), 
                                         T([1])([dx_dr123-0.1])(CUBOID([0.1, dy_dr123, dz_dr123])), 
                                         T([2])([dy_dr123-0.1])(CUBOID([dx_dr123, 0.1, dz_dr123]))]))
 
 
-case4 = COLOR(RED)(STRUCT([CUBOID([dx_dr4, dy_dr4, 0.1]), 
+case4 = COLOR(BROWN)(STRUCT([CUBOID([dx_dr4, dy_dr4, 0.1]), 
                                         CUBOID([dx_dr4, 0.1, dz_dr4]), 
                                         CUBOID([0.1, dy_dr4, dz_dr4]), 
                                         T([1])([dx_dr4-0.1])(CUBOID([0.1, dy_dr4, dz_dr4])), 
